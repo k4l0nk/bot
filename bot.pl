@@ -97,7 +97,7 @@ $SIG{'INT'} = 'IGNORE';
 $SIG{'HUP'} = 'IGNORE';
 $SIG{'TERM'} = 'IGNORE';
 $SIG{'CHLD'} = 'IGNORE';
-$SIG{'PS'} = 'IGNORE';
+#$SIG{'PS'} = 'IGNORE';
  
 chdir("$homedir");
 $server="$ARGV[0]" if $ARGV[0];
@@ -173,7 +173,7 @@ sub _trivial_http_get
   my $request = "GET $path HTTP/1.0\015\012"
               . "Host: $netloc\015\012"
               . "User-Agent: $AGENT/$VERSION/u\015\012";
-  $request .= "Pragma: no-cache\015\012" if ($main::http_no_cache);
+  $request .= "Pragma: no-cache\015\012";
   $request .= "\015\012";
   print $sock $request;
  
