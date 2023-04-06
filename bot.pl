@@ -86,7 +86,7 @@ my $version = 'v.02';
 #on @admins put your bot admin name like for example "ZPoob" but make sure to use this symbol "," and then do put the double-colums like of ur name like this "jakecobz" u can remove this message if u want
 my @admins = ("k4l0nk");
 #my @hostauth = ("irc.2600.net");
-my @channels = ("#P.M.A");
+my @channels = ("#parkir");
 my $pacotes = 1;
 
 #################################################################
